@@ -28,7 +28,8 @@ Please follow for better readability, _we will delete this instruction before de
 
 
 ## Additional Reminders
-- Use ctrl+shift+p in vscode for easier indents
+- Download Live server extension for vscode
+- Use shift+alt+f in vscode for easier indents
 - if possible connect javascript files like this
 ```
 <script defer src="myscript.js">
