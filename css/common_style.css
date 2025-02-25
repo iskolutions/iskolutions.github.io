@@ -1,0 +1,22 @@
+.main-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120vh;
+}
+.main-slide h1 {
+    font-family: "Karantina", serif;
+    font-size: 12.5rem;
+    font-weight: 500;
+    color: #222222;
+}
+.main-slide p {
+    font-family: "Georama", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #1e1e1e;
+    text-align: center;
+    text-wrap: wrap;
+    width: 48rem;
+}
