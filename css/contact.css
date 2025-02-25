@@ -1,24 +1,4 @@
-.main-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.main-slide h1 {
-    font-family: "Karantina", serif;
-    font-size: 12.5rem;
-    font-weight: 500;
-    color: #222222;
-}
-.main-slide p {
-    font-family: "Georama", serif;
-    font-size: 2rem;
-    font-weight: 300;
-    color: #1e1e1e;
-    text-align: center;
-    text-wrap: wrap;
-    width: 48rem;
-}
+
 
 .card-container {
     height: 100vh;
@@ -65,7 +45,6 @@
 }
 .message-us-container {
     width: 67rem;
-    /* border: #1e1e1e 1px solid; */
 }
 .message-us-container h2 {
     font-family: "Karantina", serif;
@@ -95,7 +74,7 @@
 .send-btn {
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 1rem;
     box-sizing: border-box;
     background-color: #2c2c2c;
     border-radius: 8px;
