@@ -1,0 +1,35 @@
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.info-section img {
+    width: 500px;
+    height: 500px;
+    border: none;
+    background-color: #d9d9d9;
+}
+
+.info-container {
+    width: 50%;
+    margin: 50px;
+    padding: 0;
+}
+.info-container h2{
+    font-family: "Karantina", serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+.info-container p {
+    font-family: "Georama", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-wrap: wrap;
+}
+
+#step2, 
+#step4,
+#step6{
+    text-align: end;
+}
