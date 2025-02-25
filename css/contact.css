@@ -1,0 +1,85 @@
+
+
+.card-container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+        "card1 card2"
+        "card3 card3";
+}
+
+.card {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+
+#card1,
+#card2 {
+    /* Need to refactor this for responsiveness */
+    width: 510px;
+    height: 286px;
+}
+
+#card1 {
+    grid-area: card1;
+}
+
+#card2 {
+    grid-area: card2;
+}
+
+#card3 {
+    grid-area: card3;
+    width: 886px;
+    height: 191px;
+}
+
+.message-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.message-us-container {
+    width: 67rem;
+}
+.message-us-container h2 {
+    font-family: "Karantina", serif;
+    font-size: 5rem;
+    font-weight: 500;
+}
+.input-container h6 {
+    font-family: "Georama", serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.input-box, 
+.message-box{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 22px 30px;
+    border: #d9d9d9ff 2px solid;
+    border-radius: 8px;
+}
+.message-box {
+    resize: none;
+    height: 15rem;
+}
+
+.send-btn {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    color: #fff;
+}
+.send-btn:hover {
+    background-color: #1b1b1b;
+}
