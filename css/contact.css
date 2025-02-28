@@ -1,0 +1,221 @@
+body {
+    display: flex;
+}
+aside {
+    display: flex;
+    width: 50%;
+    height: calc(var(--vh) * 100);
+    margin: 5%;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width: 50%;
+}
+
+h1 {
+    font-family: Karantina;
+    font-size: 6.5em;
+    color: #222;
+    margin: 0;
+}
+
+p {
+    font-family: Georama;
+    font-size: 1.25em;
+    color: #222;
+}
+
+h2 {
+    font-family: Georama;
+    font-weight: 400;
+    font-size: 2.75rem;
+    margin-top: 6rem;
+}
+
+h6 {
+    font-family: Georama;
+    font-weight: 200;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.message {
+    width: 100%;
+    align-items: left;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 40%;
+    height: 2rem;
+    margin: 10px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+
+.name {
+    display: flex;
+}
+
+.name .input-field {
+    width: 45%;
+}
+
+.email,
+.messageinput,
+.send-btn {
+    margin-top: 20px;
+}
+
+.message-text {
+    width: 90%;
+    height: 6rem;
+}
+
+.send-btn {
+    background-color: #433d8b;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+    background-color: #c8acd6;
+}
+
+.input-field {
+    position: relative;
+    width: calc(90% + 10px);
+    height: 44px;
+    line-height: 44px;
+    margin-right: 10px;
+}
+
+label {
+    font-family: Georama;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #d3d3d3;
+    transition: 0.2s all;
+    cursor: text;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #111;
+}
+
+/*gawa na lang ng fixes dito, wonky ee*/
+/* .email input:invalid~label,
+.email input:invalid {
+    font-size: 14px;
+    top: -24px;
+    border-color: #800020;
+    color: #800020;   
+} */
+
+input:focus,
+input:valid {
+    border-color: #433d8b;
+}
+
+input:focus~label,
+input:valid~label {
+    font-size: 14px;
+    top: -24px;
+    color: #433d8b;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+    }
+    aside {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            text-align: center;
+        }
+        .card {
+            display: inline-block;
+        }
+    }
+    main {
+        width: auto;
+        height: auto;
+        display: block;
+        text-align: center;
+        h2 {
+            margin-top: 0;
+            font-size: 2.75rem;
+            text-align: center;
+        }
+        .name,
+        .email {
+            display: flex;
+            justify-content: center;
+        }
+        h6 {
+            text-align: center;
+        }
+        .message-text {
+            display: flex;
+            margin: 10px;
+        }
+        .send-btn {
+            display: inline-block;
+        }
+    }
+}
