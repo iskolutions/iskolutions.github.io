@@ -6,9 +6,8 @@
 }
 .info-section img {
     width: 500px;
-    height: 500px;
+    height: auto;
     border: none;
-    background-color: #d9d9d9;
 }
 
 .info-container {
