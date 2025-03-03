@@ -85,7 +85,8 @@ li {
 }
 
 .send-btn {
-    background-color: #433d8b;
+    width: 90%;
+    background-color: #222;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
