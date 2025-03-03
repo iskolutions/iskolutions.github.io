@@ -4,59 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Title</title>
-    <link href="bootstrap\bootstrap.min.css" rel="stylesheet">
-    <script src="bootstrap\bootstrap.bundle.min.js"></script>
     <style>
-        section {scroll-margin-top: 100px;}
+        /* For accurate scrolling using the navigation links */
+        section {
+            scroll-margin-top: 100px;
+        }
+
+        nav {
+            display: grid;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar-logo {
+            align-self: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .navbar-links {
+            grid-column-start: 7;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        footer {
+            background-color: #17153B;
+            color: white;
+        }
+
+        footer div {
+            display: flex;
+            justify-content: space-around;
+            padding: 0.5rem 0rem;
+            font-size: 24px;
+            font-family: Georama;
+            font-weight: 400;
+            word-wrap: break-word
+        }
     </style>
+    <link rel="stylesheet" href="css/common_style.css">
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary sticky-top">
-        <div class="container container-fluid">
-            <a class="navbar-brand fw-bolder" href="#">
+    <nav>
+        <div class="navbar-logo">
+            <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" ht="16" fill="currentColor" class="bi bi-circle"
                     viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                 </svg>
                 Iskolutions
-            </a>
-
-            <ul class="nav justify-content-end">
-                <a class="nav-link" aria-current="page" href="#aboutSection">About Us</a>
-                <a class="nav-link" href="#teamSection">Meet Our Team</a>
-                <a class="nav-link" href="#servicesSection">Services</a>
-                <a class="nav-link" href="#processSection">Process</a>
-                <a class="nav-link" href="#contactSection">Contact Us</a>
+            </p>
+        </div>
+        <div class="navbar-links">
+            <ul style="display: grid;">
+                <a style="grid-column: 1 / 2;" aria-current="page" href="#aboutSection">About Us</a>
+                <a style="grid-column: 2 / 3;" href="#teamSection">Meet Our Team</a>
+                <a style="grid-column: 3 / 4;" href="#servicesSection">Services</a>
+                <a style="grid-column: 4 / 5;" href="#processSection">Process</a>
+                <a style="grid-column: 5 / 6;" href="#contactSection">Contact Us</a>
             </ul>
         </div>
     </nav>
 
-    <section id="aboutSection" class="container h-75 border border-3 my-5">
+    <section id="aboutSection" class="main-slide">
         About
     </section>
 
-    <section id="teamSection" class="container h-75 border border-3 my-5">
+    <section id="teamSection" class="main-slide">
         Team
     </section>
 
-    <section id="servicesSection" class="container h-75 border border-3 my-5">
+    <section id="servicesSection" class="main-slide">
         Services
     </section>
 
-    <section id="processSection" class="container h-75 border border-3 my-5">
+    <section id="processSection" class="main-slide">
         Process
     </section>
 
-    <section id="contactSection" class="container h-75 border border-3 my-5">
+    <section id="contactSection" class="main-slide">
         Contact
     </section>
 
-    <footer style="background-color: #17153B; color: white;">
-        <div class="d-flex justify-content-around py-2" style="font-size: 24px; font-family: Georama; font-weight: 400; word-wrap: break-word">
-            <span> For more inqueries contact us at:  </span>
-            <span> iskolutions@gmail.com   </span>
-            <span> LinkedIn-contact-person    </span>
+    <footer>
+        <div>
+            <span> For more inqueries contact us at: </span>
+            <span> iskolutions@gmail.com </span>
+            <span> LinkedIn-contact-person </span>
         </div>
     </footer>
 </body>
