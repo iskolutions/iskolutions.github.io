@@ -13,7 +13,7 @@
         nav {
             display: grid;
             position: sticky;
-            top: 0;
+            padding: 1rem
         }
 
         .navbar-logo {
@@ -46,7 +46,12 @@
             word-wrap: break-word
         }
     </style>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Karantina:wght@300;400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -72,7 +77,23 @@
     </nav>
 
     <section id="aboutSection" class="main-slide">
-        About
+        <div id="iskolutionsTitle" data-text="Iskolutions">
+            <ul>
+                <li>Flexible</li>
+                <li>Productive</li>
+                <li>Modest</li>
+            </ul>
+        </div>
+        <div id="devTeam">
+            <div class="text-container">
+                <h1>Iskolutions Devteam</h1>
+                <h3>Modern Problems, Require Iskolutions</h3>
+            </div>
+            <a id="contactUsBtn" href="#contactSection">
+                Contact Us
+                <object type="image/svg+xml" data="assets/icons/message.svg" class="svg-icon"></object>
+            </a>
+        </div>
     </section>
 
     <section id="teamSection" class="main-slide">
@@ -98,4 +119,7 @@
             <span> LinkedIn-contact-person </span>
         </div>
     </footer>
+    <script src="js/script.js"> </script>
 </body>
+
+</html>
