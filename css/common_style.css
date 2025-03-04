@@ -3,11 +3,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 120vh;
+    min-height: 100vh;
+    overflow: hidden;
 }
 .main-slide h1 {
-    font-family: "Karantina", serif;
-    font-size: 12.5rem;
     font-weight: 500;
     color: #222222;
 }
